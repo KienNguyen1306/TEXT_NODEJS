@@ -7,7 +7,7 @@ const postRouter = require("./routes/posts_router");
 // kết nối cort
 app.use(
   cors({
-    origin: "http://localhost:5000/",
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
