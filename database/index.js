@@ -2,7 +2,7 @@ const mysql = require("mysql2");
 require("dotenv").config(); // kết nối biến môi trường
 
 const pool = mysql.createPool({
-  host: "localhost",
+  host: process.env.HOST,
   user: process.env.USER,
   database: process.env.NAME,
   password: process.env.PASSWORD,
