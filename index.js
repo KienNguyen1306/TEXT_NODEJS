@@ -5,12 +5,12 @@ const app = express();
 
 const postRouter = require("./routes/posts_router");
 // kết nối cort
-app.use(
-  cors({
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: "*",
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//   })
+// );
 
 //CRUD
 app.use(express.urlencoded({ extended: true }));
